@@ -1,0 +1,53 @@
+ @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-logo {
+    animation: rotate 2s linear infinite;
+
+}
+
+
+
+.body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: blue;
+}
+
+.kings {
+    color: white;
+    font-weight: 700;
+    align-items: center;
+    margin: auto;
+    animation: rotate 2s linear infinite;
+}
+
+.james {
+    color: blue;
+    font-weight: 400;
+    align-items: center;
+    margin: auto;
+}
+
+.section id:product {
+    padding: 2px;
+    color: black;
+}
+
+.footer {
+    background-color: white;
+    margin-top: 30px;
+
+}
+
+.btn-1 {
+    background-color: green;
+    padding: 2px;
+    color: green;
+
+}

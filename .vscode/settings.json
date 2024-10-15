@@ -1,0 +1,10 @@
+{
+    "cSpell.enableFiletypes": [
+        "search-result",
+        "snippets",
+        "sql",
+        "tailwindcss",
+        "xml"
+    ],
+    "liveServer.settings.port": 5501
+}

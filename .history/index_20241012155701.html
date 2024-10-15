@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chi-chi autos webpage</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+    @keyframes rotate-logo {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(180deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes mymoves {
+        from {
+            background-color: white;
+        }
+
+        to {
+            background-color: orange;
+        }
+    }
+
+    .rotate-logo {
+        border-radius: 46%;
+        animation: rotate-logo 1s linear infinite;
+    }
+
+    body {
+        color: orange;
+        animation: mymoves 3s linear infinite;
+    }
+
+    .first-text {
+        color: black;
+        align-items: center;
+        margin-left: 40%;
+        margin-top: 1%;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600 bolder;
+    }
+
+    h3 {
+        display: flex;
+        border: 5px;
+        border-radius: 10%;
+    }
+
+    h3 :placeholder-shown {
+        background-color: BLACK;
+        margin-top: 35%;
+        height: 30px;
+        width: 25%;
+    }
+
+    .flex-container {
+        display: flex;
+        height: 250px;
+        width: 100%;
+        background-color: black;
+        background-image: url('images/chi-chi autos logo.jpg');
+        background-position: cover;
+        background-position: center;
+        justify-items: center;
+        margin-left: 2%;
+        margin-top: -7%;
+    }
+
+    .message {
+        align-items: end;
+        position: sticky;
+        margin-left: 85%;
+        width: 20%;
+    }
+
+    .image {
+        display: flex;
+        height: auto;
+        width: 50%;
+    }
+
+    p {
+        color: orange;
+        width: 15%;
+        margin-left: 25%;
+        margin-top: 6%;
+    }
+
+    p:hover {
+        color: orange;
+        opacity: 0.33;
+    }
+
+    .chiautos {
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    h4 {
+        color: black;
+    }
+
+    moblile{
+        only screen: and (min-width:"480px")
+    }
+
+    phone{
+        only screen: and(max-width:"320px")
+    }
+
+</style>
+
+<body>
+    <header>
+        <img class="rotate-logo" src="images/2.jpg" alt="my-logo" height="auto" width="60px">
+        </img>
+
+        <div class="flex-container">
+            <div class="image"><img class="image" src="images/chi-chi autos logo.jpg" alt="" height"auto" width="50px">
+            </div>
+            <p>Chichi Autos! 🚗✨ Offering a wide variety of vehicles, from sleek sedans to rugged SUVs. Serving
+                customers across Nigeria with quality cars that meet every need and budget. Drive with confidence, drive
+                with Chichi Autos! 🌍🚙</p>
+        </div>
+
+        <div class="chiautos">
+            <marquee <h1 style="text-align:center" bg-color="orange" direction="down" behaviour="scroll" ;
+                scrollamount="5">
+                🚗___CHI-CHI AUTOS____🚗
+                </h1>
+            </marquee>
+        </div>
+
+
+        <h2 class="first-text">YOUR NUMBER ONE LEGIT CAR SOURCE🌍</h2>
+    </header>
+
+    <div class="menu-bar">
+        <li></li>
+    </div>
+
+    <footer>
+        <h3><input type="text" id="searchinput" placeholder="search-item🚗" onkeyup="searchitems()">
+            <!--list of items-lost-->
+            <div id="item-lost">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </h3>
+
+
+        <footer>
+            <Div class="div1">
+                <div class="message"> <a href="https://wa.me/1234567890" target="_blank">
+                        <button
+                            style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+                            Message Customer Care on WhatsApp
+                        </button>
+                    </a>
+
+                </div>
+                <h4 class="second-text">(c) 2020 CHI-CHI AUTOS nig ltd</h4>
+
+        </footer>
+
+    </footer>
+
+</body>
+
+</html>

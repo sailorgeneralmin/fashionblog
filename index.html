@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>chi-chi autos webpage</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <style>
     @keyframes mymoves {
@@ -19,6 +20,8 @@
     }
 
     body {
+        height: auto;
+        width: 100%;
         color: orange;
         animation: mymoves 3s linear infinite;
     }
@@ -33,17 +36,16 @@
         font-weight: 600 bolder;
     }
 
-    h3 {
+    .search-box {
         display: flex;
         border: 5px;
         border-radius: 10%;
     }
 
-    h3 :placeholder-shown {
+    .search-box :placeholder-shown {
         background-color: BLACK;
-        margin-top: 35%;
-        height: 30px;
-        width: 25%;
+        height: 25px;
+        width: 30%;
     }
 
     .flex-container {
@@ -61,9 +63,15 @@
 
     .message {
         align-items: end;
-        position: sticky;
-        margin-left: 85%;
-        width: 20%;
+        margin-left: 95%;
+        margin-bottom: -22%;
+        width: 100px;
+        height: auto;
+    }
+
+    .message:hover {
+        opacity: 0.33;
+        color: green;
     }
 
     .image {
@@ -95,12 +103,80 @@
         color: black;
     }
 
-    moblile {
-        only screen: and (min-width:"480px")
+    @keyframes slideAnimation {
+        0% {
+            transform: translateX(0)
+        }
+
+        33% {
+            transform: translateX(-33.33%);
+        }
+
+        66% {
+            transform: translateX(-66.66%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
     }
 
-    phone {
-        only screen: and(max-width:"320px")
+    .slider {
+        display: flex;
+        animation: slideAnimation 11s linear infinite;
+        margin-top: 12%;
+        width: 150%;
+    }
+
+    .slider img {
+        display: flex;
+        object-fit: cover;
+        height: 4%;
+        width: 200px;
+        border: none;
+        transition-duration: 0.2s;
+        border-radius: 50%;
+
+    }
+
+    @keyframes slideAnimation {
+        0% {
+            transform: translateX(0)
+        }
+
+        33% {
+            transform: translateX(-33.33%);
+        }
+
+        66% {
+            transform: translateX(-66.66%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .second-text {
+        color: black;
+        align-items: start;
+        margin-bottom: 5%;
+    }
+
+    .menu-bar {
+        display: flex;
+        align-items: center;
+        margin-left: 50%;
+    }
+
+    .ul .menubar {
+        display: inline-flex;
+        margin-left: 15px;
+
+    }
+
+    mobile{
+        only screen: and(min-width:480px)
     }
 </style>
 
@@ -128,101 +204,51 @@
 
     <div class="menu-bar">
         <ul>
-            <li class="HOME"><a href=""></a>HOME</li>
-            <div class="sub-menu1">
-                <ul>
-                    <li> <a href=""></a>cars(suv)</li>
-                    <li><a href=""></a>cars(sedan)</li>
-                    <Li><a href=""></a>trucks</Li>
-                </ul>
-
-                <li class="HOME"><a href=""></a>HOME</li>
-                <div class="sub-menu1">
-                    <ul>
-                        <li> <a href=""></a>cars(suv)</li>
-                        <li><a href=""></a>cars(sedan)</li>
-                        <Li><a href=""></a>trucks</Li>
-                    </ul>
-
-                    <li class="HOME"><a href=""></a>HOME</li>
-                    <div class="sub-menu1">
-                        <ul>
-                            <li> <a href=""></a>cars(suv)</li>
-                            <li><a href=""></a>cars(sedan)</li>
-                            <Li><a href=""></a>trucks</Li>
-                        </ul>
-
-
-
-
-                        <ul>
-                            <li><a href="default.asp">Home</a></li>
-                            <li><a href="news.asp">News</a></li>
-                            <li><a href="contact.asp">Contact</a></li>
-                            <li><a href="about.asp">About</a></li>
-                        </ul>
-
-                    </div>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
-
     </div>
 
     <footer>
-        <h3><input type="text" id="searchinput" placeholder="search-item🚗" onkeyup="searchitems()">
-            <!--list of items-lost-->
-            <div id="item-lost">
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
+        <div class="meessage">
+            <img class="message" src="images/whatsapp_2504957.png" alt="" height="auto" width="30px">
+            <a href="https://wa.me/+2348069678759" target="_blank">
+        </div>
+
+        <section id="products" class="PRODUCTS">
+            <div class="slider">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.20_f6f84712.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.25_44bdc801.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.24_3f25e7a4.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.23_51cb04bc.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.25_1c5d2fe8.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.22_45a0b4e7.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.22_9c43dce6.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.22_9c43dce6.jpg" alt="" height="90px"
+                    width="150px">
+                <img class="image1" src="images/chi-chi autos logo.jpg" alt="" height="120px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.20_6c60c88c.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/range rover pic.jpg" alt="" height="auto" width="170px">
+                <img class="image1" src="images/car for rent social media template.png" alt="" height="150px"
+                    width="120px" alt="" height="150px" width="120px">
+                <img class="image1" src="images/honda pics.jpg" alt="" height="150px" width="120px">
             </div>
-        </h3>
 
-
-        <footer>
-            <Div class="div1">
-                <div class="message"> <a href="https://wa.me/+2348069678759" target="_blank">
-                        <button
-                            style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
-                            Message Customer Care on WhatsApp
-                        </button>
-                    </a>
-
-                </div>
+            <div class="second-text">
                 <h4 class="second-text">(c) 2020 CHI-CHI AUTOS nig ltd</h4>
-        
-        <Div class="slider">
-            <div class="image1" src="" alt="" height="" width=""></div>
-            <div class="image1" src="" alt="" height="" width=""></div>
-            <div class="image1" src="" alt="" height="" width=""></div>
-            <div class="image1" src="" alt="" height="" width=""></div>
-            <div class="image1" src="" alt="" height="" width=""></div>
-            <div class="image1" src="" alt="" height="" width=""></div>
-            <div class="image1" src="" alt="" height="" width=""></div>
-            <div class="image1" src="" alt="" height="" width=""></div>
-            <div class="image1" src="" alt="" height="" width=""></div>
-            <div class="image1" src="" alt="" height="" width=""></div>
-            <div class="image1" src="" alt="" height="" width=""></div>
-            <div class="image1" src="" alt="" height="" width=""></div>
-            <div class="image1" src="" alt="" height="" width=""></div>
-            <div class="image1" src="" alt="" height="" width=""></div>
-            <div class="image1" src="" alt="" height="" width=""></div>
-            <div class="image1" src="" alt="" height="" width=""></div>
-        </Div>
-
+            </div>
+        </section>
     </footer>
-
 </body>
 
 </html>

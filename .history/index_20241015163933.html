@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chi-chi autos webpage</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+    @keyframes mymoves {
+        from {
+            background-color: white;
+        }
+
+        to {
+            background-color: orange;
+        }
+    }
+
+    body {
+        color: orange;
+        animation: mymoves 3s linear infinite;
+    }
+
+    .first-text {
+        color: black;
+        align-items: center;
+        margin-left: 40%;
+        margin-top: 1%;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600 bolder;
+    }
+
+    .search-box{
+        display: flex;
+        border: 5px;
+        border-radius: 10%;
+    }
+
+    .search-box :placeholder-shown {
+        background-color: BLACK;
+        margin-top: 35%;
+        height: 30px;
+        width: 25%;
+    }
+
+    .flex-container {
+        display: flex;
+        height: 250px;
+        width: 100%;
+        background-color: black;
+        background-image: url('images/chi-chi autos logo.jpg');
+        background-position: cover;
+        background-position: center;
+        justify-items: center;
+        margin-left: 2%;
+        margin-top: -1%;
+    }
+
+    .message {
+        align-items: end;
+        position: sticky;
+        margin-left: 80%;
+        width: 15%;
+    }
+
+    .image {
+        display: flex;
+        height: auto;
+        width: 50%;
+    }
+
+    p {
+        color: orange;
+        width: 15%;
+        margin-left: 25%;
+        margin-top: 6%;
+    }
+
+    p:hover {
+        color: orange;
+        opacity: 0.33;
+    }
+
+    .chiautos {
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    h4 {
+        color: black;
+    }
+
+    @keyframes slideAnimation {
+        0% {
+            transform: translateX(0)
+        }
+
+        33% {
+            transform: translateX(-33.33%);
+        }
+
+        66% {
+            transform: translateX(-66.66%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .slider{
+        display:flex;
+        animation: slideAnimation 8s linear infinite;
+        width:200%;
+
+    }
+
+    .slider img{
+        display:flex;
+        object-fit: cover;
+        height:5%;
+        width:300px;
+        border:none;
+        transition-duration: 0.2s;
+
+    }
+
+    @keyframes slideAnimation {
+        0% {
+            transform: translateX(0)
+        }
+
+        33% {
+            transform: translateX(-33.33%);
+        }
+
+        66% {
+            transform: translateX(-66.66%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="flex-container">
+            <div class="image"><img class="image" src="images/chi-chi autos logo.jpg" alt="" height"auto" width="50px">
+            </div>
+            <p>Chichi Autos! 🚗✨ Offering a wide variety of vehicles, from sleek sedans to rugged SUVs. Serving
+                customers across Nigeria with quality cars that meet every need and budget. Drive with confidence, drive
+                with Chichi Autos! 🌍🚙</p>
+        </div>
+
+        <div class="chiautos">
+            <marquee <h1 style="text-align:center" bg-color="orange" direction="down" behaviour="scroll" ;
+                scrollamount="5">
+                🚗___CHI-CHI AUTOS____🚗
+                </h1>
+            </marquee>
+        </div>
+
+
+        <h2 class="first-text">YOUR NUMBER ONE LEGIT CAR SOURCE🌍</h2>
+    </header>
+
+    <div class="menu-bar">
+        <ul>
+            <li class="HOME"><a href=""></a>HOME</li>
+            <div class="sub-menu1">
+                <ul>
+                    <li> <a href=""></a>cars(suv)</li>
+                    <li><a href=""></a>cars(sedan)</li>
+                    <Li><a href=""></a>trucks</Li>
+                </ul>
+
+                <li class="HOME"><a href=""></a>HOME</li>
+                <div class="sub-menu1">
+                    <ul>
+                        <li> <a href=""></a>cars(suv)</li>
+                        <li><a href=""></a>cars(sedan)</li>
+                        <Li><a href=""></a>trucks</Li>
+                    </ul>
+
+                    <li class="HOME"><a href=""></a>HOME</li>
+                    <div class="sub-menu1">
+                        <ul>
+                            <li> <a href=""></a>cars(suv)</li>
+                            <li><a href=""></a>cars(sedan)</li>
+                            <Li><a href=""></a>trucks</Li>
+                        </ul>
+
+
+
+
+                        <ul>
+                            <li><a href="default.asp">Home</a></li>
+                            <li><a href="news.asp">News</a></li>
+                            <li><a href="contact.asp">Contact</a></li>
+                            <li><a href="about.asp">About</a></li>
+                        </ul>
+
+                    </div>
+        </ul>
+
+    </div>
+
+    <footer>
+        <div class="search-box"
+        <h3><input type="text" id="searchinput" placeholder="search-item🚗" onkeyup="searchitems()">
+            <!--list of items-lost-->
+            <div id="item-lost">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </h3>
+
+
+        <footer>
+            <Div class="div1">
+                <div class="message"> <a href="https://wa.me/+2348069678759" target="_blank">
+                        <button
+                            style="background-color: #25D366; color: white; padding: 10px "20px; border: none; border-radius: 5px; cursor: pointer;">
+                            Message Customer Care on WhatsApp
+                        </button>
+                    </a>
+
+                </div>
+
+                <h4 class="second-text">(c) 2020 CHI-CHI AUTOS nig ltd</h4>
+        <section id="products" class="PRODUCTS">
+        <Div class="slider">
+            
+            <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.20_f6f84712.jpg" alt="" height="auto" width="40px"></div>
+            <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.25_44bdc801.jpg" alt="" height="auto" width="40px"></div>
+            <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.24_3f25e7a4.jpg" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="images/Beige Red Simple Need A Car Your Story.png" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.23_51cb04bc.jpg" alt="" height="auto" width="40px"></div>
+            <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.25_1c5d2fe8.jpg" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.22_45a0b4e7.jpg" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.22_9c43dce6.jpg" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.22_9c43dce6.jpg" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="images/chi-chi autos logo.jpg" alt="" height="auto" width="150px"></div>
+            <img class="image1" src="images/Monochrome minimalist stay tuned instagram story.png" alt="" height="auto" width="150px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+            <img class="image1" src="" alt="" height="auto" width="50px"></div>
+        </div>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

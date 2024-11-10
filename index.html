@@ -24,6 +24,9 @@
         width: 100%;
         color: orange;
         animation: mymoves 3s linear infinite;
+        background-image: url('images/4006.jpg');
+        overscroll-behavior: none;
+        overscroll-behavior-block: none;
     }
 
     .first-text {
@@ -57,20 +60,21 @@
         background-position: cover;
         background-position: center;
         justify-items: center;
-        margin-left: 2%;
+        margin-left: 1%;
         margin-top: -1%;
     }
 
     .message {
         align-items: end;
-        margin-left: 95%;
-        margin-bottom: -22%;
+        margin-left: 90%;
+        margin-top: -20%;
+        margin-bottom: 15%;
         width: 100px;
         height: auto;
     }
 
     .message:hover {
-        opacity: 0.33;
+        opacity: 0.7;
         color: green;
     }
 
@@ -90,6 +94,15 @@
     p:hover {
         color: orange;
         opacity: 0.33;
+    }
+
+    text{
+        display:flex;
+        background-color: white;
+        color: black;
+        height: 20px;
+        width: 35%;
+        justify-content: center;
     }
 
     .chiautos {
@@ -123,16 +136,16 @@
 
     .slider {
         display: flex;
-        animation: slideAnimation 11s linear infinite;
-        margin-top: 12%;
-        width: 150%;
+        animation: slideAnimation 9s linear infinite;
+        margin-top: 25%;
+        width: 100%;
     }
 
     .slider img {
         display: flex;
         object-fit: cover;
         height: 4%;
-        width: 200px;
+        width: 150px;
         border: none;
         transition-duration: 0.2s;
         border-radius: 50%;
@@ -163,20 +176,82 @@
         margin-bottom: 5%;
     }
 
-    .menu-bar {
-        display: flex;
-        align-items: center;
-        margin-left: 50%;
-    }
-
-    .ul .menubar {
+    menu-bar {
         display: inline-flex;
-        margin-left: 15px;
-
+        justify-content: space-around;
+        background-position: center;
+        background-position: bottom;
+        align-items: center;
+        padding: 5px;
     }
 
-    .mobile{
-        only screen: and(min-width:480px)
+    li {
+        background-color: orange;
+        display: inline-flex;
+        justify-content: center;
+        padding: 5px;
+        margin: 0px;
+        margin-left: 15%;
+    }
+
+    li:hover {
+        opacity: 0.25;
+        color: orange;
+    }
+
+    .box-container {
+        display: flex;
+        background-color: white;
+        width: 15%;
+        margin-top: 8%;
+    }
+
+    name:placeholder {
+        display: block;
+        height: 20px;
+        width: 35%;
+    }
+
+    message1:placeholder {
+        color: black;
+        height: 20px;
+        width: 35%;
+        margin-top: 15%;
+        justify-content: center;
+    }
+
+    .flex-container2 {
+        display: block;
+        height: 150px;
+        width: 15%;
+        box-sizing: content-box;
+        border-radius: 5px;
+        border-color: black;
+        border-style: solid 5px;
+        margin-left: 85%;
+        margin-top: -15%;
+        overscroll-behavior: none;
+    }
+
+    .form {
+        display: block;
+        border-radius: solid 5px;
+        border-style: solid;
+    }
+
+    button {
+        background-color: red;
+        margin-top: 15%;
+        height: 30px;
+        width: 25%;
+        color: white;
+        backdrop-filter: blur(10px);
+    }
+
+    .button:hover {
+        opacity: 0.33;
+        transition: none;
+        color: green;
     }
 </style>
 
@@ -204,15 +279,40 @@
 
     <div class="menu-bar">
         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="GALLERY.html">GALLERY</a></li>
+            <li><a href="BLOG.html">BLOG</a></li>
+            <li><a href="about.html">ABOUT</a></li>
         </ul>
     </div>
 
+    <div class="box-container">
+        <div class="text">OPENING-HOURS<BR>
+            MONDAYS 9.00AM - 5.OOPM<BR>
+            TUESDAYS 9.00AM - 5.00PM<BR>
+            WEDNESDAYS 9.00AM - 5.00PM<BR>
+            THURSDAYS 11.00AM - 6.OOPM<BR>
+            FRIDAYS 9.00AM - 4.00PM<BR>
+            SATURDAYS 8.00AM - 6.00PM<BR>
+            SUNDAYS CLOSED(CHECK-IN NEXT DAY)
+        </div>
+    </div>
+
     <footer>
-        <div class="meessage">
+        <form>
+            <div class="flex-container2">
+                <div class="name">
+                    <input type="text" id="name" placeholder="name">
+                </div>
+                <div class="message1">
+                    <input type="text" id="message" placeholder="message">
+                </div>
+                <div class="button"> <button>submit</button></div>
+        </form>
+
+        </div>
+
+        <div class="message">
             <img class="message" src="images/whatsapp_2504957.png" alt="" height="auto" width="30px">
             <a href="https://wa.me/+2348069678759" target="_blank">
         </div>

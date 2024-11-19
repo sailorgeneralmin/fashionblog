@@ -9,5 +9,6 @@
     "liveServer.settings.port": 5501,
     "cSpell.words": [
         "loveth"
-    ]
+    ],
+    "DockerRun.DisableDockerrc": true
 }

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chi-chi autos webpage</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<style>
+    @keyframes mymoves {
+        from {
+            background-color: white;
+        }
+
+        to {
+            background-color: orange;
+        }
+    }
+
+    body {
+        height: auto;
+        width: 100%;
+        color: orange;
+        animation: mymoves 3s linear infinite;
+    }
+
+    .first-text {
+        color: black;
+        align-items: center;
+        margin-left: 40%;
+        margin-top: 1%;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600 bolder;
+    }
+
+    .search-box {
+        display: flex;
+        border: 5px;
+        border-radius: 10%;
+    }
+
+    .search-box :placeholder-shown {
+        background-color: BLACK;
+        height: 25px;
+        width: 30%;
+    }
+
+    .flex-container {
+        display: flex;
+        height: 250px;
+        width: 100%;
+        background-color: black;
+        background-image: url('images/chi-chi autos logo.jpg');
+        background-position: cover;
+        background-position: center;
+        justify-items: center;
+        margin-left: 1%;
+        margin-top: -1%;
+    }
+
+    .message {
+        align-items: end;
+        margin-left: 95%;
+        margin-bottom: -22%;
+        width: 100px;
+        height: auto;
+    }
+
+    .message:hover {
+        opacity: 0.33;
+        color: green;
+    }
+
+    .image {
+        display: flex;
+        height: auto;
+        width: 50%;
+    }
+
+    p {
+        color: orange;
+        width: 15%;
+        margin-left: 25%;
+        margin-top: 6%;
+    }
+
+    p:hover {
+        color: orange;
+        opacity: 0.33;
+    }
+
+    .chiautos {
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    h4 {
+        color: black;
+    }
+
+    @keyframes slideAnimation {
+        0% {
+            transform: translateX(0)
+        }
+
+        33% {
+            transform: translateX(-33.33%);
+        }
+
+        66% {
+            transform: translateX(-66.66%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .slider {
+        display: flex;
+        animation: slideAnimation 11s linear infinite;
+        margin-top: 12%;
+        width: 150%;
+    }
+
+    .slider img {
+        display: flex;
+        object-fit: cover;
+        height: 4%;
+        width: 200px;
+        border: none;
+        transition-duration: 0.2s;
+        border-radius: 50%;
+
+    }
+
+    @keyframes slideAnimation {
+        0% {
+            transform: translateX(0)
+        }
+
+        33% {
+            transform: translateX(-33.33%);
+        }
+
+        66% {
+            transform: translateX(-66.66%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .second-text {
+        color: black;
+        align-items: start;
+        margin-bottom: 5%;
+    }
+
+    .menu-bar {
+        color:black;
+        display: flex;
+        justify-content: space-around;
+        background-position: center;
+        background-position: bottom;
+        align-items: center;
+        margin-left: 12px;
+
+    }
+
+    li {
+        background-color: orange;
+        display: inline-flex;
+        justify-content: center;
+        padding: 5%;
+        margin: 20px;
+        width: 25%;
+    }
+
+    li:hover {
+        opacity: 0.25;
+        color: orange;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="flex-container">
+            <div class="image"><img class="image" src="images/chi-chi autos logo.jpg" alt="" height"auto" width="50px">
+            </div>
+            <p>Chichi Autos! 🚗✨ Offering a wide variety of vehicles, from sleek sedans to rugged SUVs. Serving
+                customers across Nigeria with quality cars that meet every need and budget. Drive with confidence, drive
+                with Chichi Autos! 🌍🚙</p>
+        </div>
+
+        <div class="chiautos">
+            <marquee <h1 style="text-align:center" bg-color="orange" direction="down" behaviour="scroll" ;
+                scrollamount="5">
+                🚗___CHI-CHI AUTOS____🚗
+                </h1>
+            </marquee>
+        </div>
+
+
+        <h2 class="first-text">YOUR NUMBER ONE LEGIT CAR SOURCE🌍</h2>
+    </header>
+
+    <div class="menu-bar">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="GALLERY.html">GALLERY</a></li>
+            <li><a href="BLOG.html">BLOG</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </div>
+
+    <div class="box-container">
+        <div class="text">OPENING-HOURS<BR>
+        </div>
+    </div>
+
+    <footer>
+        <div class="meessage">
+            <img class="message" src="images/whatsapp_2504957.png" alt="" height="auto" width="30px">
+            <a href="https://wa.me/+2348069678759" target="_blank">
+        </div>
+
+        <section id="products" class="PRODUCTS">
+            <div class="slider">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.20_f6f84712.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.25_44bdc801.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.24_3f25e7a4.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.23_51cb04bc.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.25_1c5d2fe8.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.22_45a0b4e7.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.22_9c43dce6.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.22_9c43dce6.jpg" alt="" height="90px"
+                    width="150px">
+                <img class="image1" src="images/chi-chi autos logo.jpg" alt="" height="120px" width="150px">
+                <img class="image1" src="images/WhatsApp Image 2024-08-16 at 15.26.20_6c60c88c.jpg" alt=""
+                    height="150px" width="150px">
+                <img class="image1" src="images/range rover pic.jpg" alt="" height="auto" width="170px">
+                <img class="image1" src="images/car for rent social media template.png" alt="" height="150px"
+                    width="120px" alt="" height="150px" width="120px">
+                <img class="image1" src="images/honda pics.jpg" alt="" height="150px" width="120px">
+            </div>
+
+            <div class="second-text">
+                <h4 class="second-text">(c) 2020 CHI-CHI AUTOS nig ltd</h4>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

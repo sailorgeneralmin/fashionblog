@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>necklace Shopping Site</title>
+    <style>
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .rotate-logo {
+            display: flex;
+            animation: rotate 2s linear infinite;
+            background-color: transparent;
+            border-radius: 15px;
+        }
+
+        body {
+            background-color: black;
+            color: gold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        h2 {
+            align-items: center;
+            margin-left: 40%;
+            padding: 2px 5px;
+            color: green;
+            margin-top: 2%;
+            margin-bottom: 5%;
+            margin-left: 45%
+        }
+
+        .product {
+            width: 200px;
+            text-align: center;
+            margin: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product .name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .product .price {
+            color: white;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        button {
+            background-color: red;
+            border-radius: 40%;
+        }
+
+        button:hover {
+            color: white;
+            opacity: 0.8;
+        }
+
+        back-button {
+            display: flex;
+            height: auto;
+            width: 40px;
+        }
+
+        .back-button:hover {
+            color: greenyellow;
+            opacity: 0.7;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="rotate-logo" src="images/Pink Feminine Small Business Logo22.png" alt="rotate-logo" height="auto"
+            width="40px">
+    </header>
+
+    <h1 style="text-align: center;">AFAAF LIPS AND JEWELRIES</h1>
+    <h2><input type="text" id="searchinput" placeholder="Search-items">
+    </h2>
+
+
+
+    <div class="product-container">
+        <div class="product">
+            <img src="images/IMG_2508.PNG" alt="Item 1">
+            <div class="name">Product Name 1</div>
+            <button>
+                <div class="price">$20.00</div>
+        </div>
+        </button>
+
+        <div class="product">
+            <img src="images/IMG_2509.PNG" alt="Item 2">
+            <div class="name">Product Name 2</div>
+            <button>
+                <div class="price">$35.00</div>
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="images/IMG_2510.PNG" alt="Item 3">
+            <div class="name">Product Name 3</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="images/IMG_2511.PNG" alt="Item 4">
+            <div class="name">Product Name 4</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="images/IMG_2512.PNG" alt="Item 5">
+            <div class="name">Product Name 5</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="images/IMG_2513.PNG" alt="Item 6">
+            <div class="name">Product Name 6</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="images/IMG_2514.PNG" alt="Item 7">
+            <div class="name">Product Name 7</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="images/WhatsApp Image 2024-08-25 at 22.47.41_adaf8307 (2).jpg" alt="Item 8">
+            <div class="name">Product Name 8</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="images/WhatsApp Image 2024-08-25 at 22.47.53_9ae38838.jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="images/WhatsApp Image 2024-08-25 at 22.47.53_34a6fee4 (2).jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="images/WhatsApp Image 2024-08-25 at 22.47.53_3d5f0344 (2).jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="images/WhatsApp Image 2024-08-25 at 22.47.52_dd96e81b.jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="images/WhatsApp Image 2024-08-25 at 22.47.54_00029ccc (2).jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="images/WhatsApp Image 2024-08-25 at 22.47.56_d793f3c3.jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="images/WhatsApp Image 2024-08-25 at 22.47.56_4424b00e (2).jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+
+        <div class="product">
+            <img src="images/WhatsApp Image 2024-08-25 at 22.47.49_09bbdcd1 (2).jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="images/WhatsApp Image 2024-08-25 at 22.47.50_8894b788 (2).jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="images/WhatsApp Image 2024-08-25 at 22.47.44_6817d900 (2).jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="images/WhatsApp Image 2024-08-25 at 22.47.49_833a8a8e.jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="images/WhatsApp Image 2024-08-25 at 22.47.46_19308fd7 copy.jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="images/WhatsApp Image 2024-08-25 at 22.47.45_bacd9ec4 (2).jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="images/WhatsApp Image 2024-08-25 at 22.47.44_53bc1d35 (2).jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="item9.jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="item9.jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="item9.jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="item9.jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="item9.jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="item9.jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="item9.jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="item9.jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="item9.jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="item9.jpg" alt="Item 9">
+            <div class="name">Product Name 9</div>
+            <button>
+                <div class="price">$15.00</div>
+            </button>
+        </div>
+    </div>
+    <footer>
+        <!--link to the main page-->
+        <a href="index.html"> <img class="back-button" src="images/back sign.png" alt="go back to the main page"
+                height="auto" width="40px">
+
+            <!--link to the necklace page-->
+            <a href="necklace.html"></a>
+            <script src="index.js"></script>
+    </footer>
+
+
+</body>
+
+</html>

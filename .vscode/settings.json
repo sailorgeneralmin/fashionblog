@@ -7,5 +7,10 @@
         "Jewelleries",
         "Omoshalewa",
         "roseline"
-    ]
+    ],
+    "DockerRun.DisableDockerrc": true,
+    "cmake.options.statusBarVisibility": "visible",
+    "liveServer.settings.port": 5501,
+    "editor.fontSize": 10,
+    "editor.fontFamily": "sans serif"
 }

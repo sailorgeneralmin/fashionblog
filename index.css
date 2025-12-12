@@ -8,13 +8,16 @@
      }
  }
 
- *{
-    padding: 0;
-    margin: 0;
+ * {
+     padding: 0;
+     justify-content: center;
+     align-content: center;
+     margin: 0;
  }
+
  .body {
-    width: 100%;
-    background-color: black;
+     display: flex;
+     background-color: purple;
      font-family: Arial, Helvetica, sans-serif, poppins;
  }
 
@@ -26,13 +29,14 @@
 
  header {
      border-radius: 18px orange;
-        display: flex;
-        width: auto;
+     display: flex;
+     width: 135%;
      background-color: black;
      justify-content: space-around;
      text-align: center;
      filter: drop-shadow(5px 5px purple);
      padding: 10px 25px;
+     margin-top: 5px;
  }
 
  .h1 {
@@ -47,7 +51,7 @@
  .h2 {
      display: flex;
      font-weight: bolder;
-     width: 90%;
+     width: 50%;
      font-size: large;
      margin-left: 100px;
      color: white;
@@ -58,12 +62,13 @@
 
  .nav-bar {
      display: flex;
+     width: 149.5%;
      justify-content: center;
      text-align: center;
      text-decoration: none;
      background-color: black;
      font: bolder;
-     font-size:medium;
+     font-size: medium;
  }
 
  .nav-bar .ul {
@@ -72,12 +77,14 @@
  }
 
  .nav-bar li {
-    display: inline-flex;
+     display: inline-flex;
      padding: 10px;
  }
 
  .nav-bar li a {
      display: inline-flex;
+     font-size: 1.5rem;
+     font-weight: bolder;
      text-decoration: none;
      color: white;
      justify-content: space-between;
@@ -92,42 +99,43 @@
      border-radius: 5px;
  }
 
- .nav-bar .dropdown-menu{
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: purple;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+ .nav-bar .dropdown-menu {
+     display: none;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: purple;
+     padding: 10px;
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
  }
 
- .dropdown-menu:hover .dropdown-menu{
- display: block;
+ .dropdown-menu:hover .dropdown-menu {
+     display: block;
  }
 
- .dropdown-menu .li{
-    display: block;
-    margin-right: 0;
+ .dropdown-menu .li {
+     display: block;
+     margin-right: 0;
  }
 
- .dropdown-menu .a{
- padding: 10px;
- display: block;
-  }
+ .dropdown-menu .a {
+     padding: 10px;
+     display: block;
+ }
 
- .nav-bar .dropdown-menu:hover{
-    display: none;
-    margin-top: 10px;
+ q .nav-bar .dropdown-menu:hover {
+     display: none;
+     margin-top: 10px;
  }
 
  .grid-container {
      display: grid;
-     width: auto;
-
-     margin:0;
+     width: 149%;
+     justify-items: center;
+     justify-content: center;
+     margin: 0;
      padding: 0;
      color: white;
      text-decoration: none;
@@ -173,6 +181,23 @@
      font-weight: bold;
  }
 
+ .find-button {
+     display: flex;
+     margin-top: 8px;
+     color: white;
+     text-align: center;
+     border-radius: 8px;
+     background-color: green;
+     cursor: pointer;
+     text-decoration: none;
+ }
+
+ .find-button:hover {
+     opacity: 1;
+     color: green;
+     filter: drop-shadow(5px 5px 5px blue);
+ }
+
  .search-button {
      display: flex;
      color: white;
@@ -199,31 +224,33 @@
 
  .footer {
      background-color: black;
-     padding: 10px 0;
+     padding: 35px 0;
      margin-top: 1%;
+     width: 150%;
  }
 
  .footer-container {
      display: flex;
-     width: 100%;
      flex-wrap: wrap;
-     justify-content: space-between;
+     justify-content: space-between ;
      max-width: 0 auto;
-     padding: 0 25px;
+     padding: 0 30px;
  }
 
  .footer-section {
-     flex-basis: 30%;
-     margin-bottom: -20px;
+     flex-basis: 95%;
+     margin-bottom: 20px;
  }
 
  .footer-section,
  p {
      color: gold;
+     font-size: 1.2rem;
  }
 
  .footer-section h4 {
      margin-top: 8px;
+     justify-content: space-evenly;
  }
 
  .footer-section ul {
@@ -234,7 +261,7 @@
 
 
  .footer-section li {
-     margin-bottom: 8px;
+     margin-bottom: 10px;
 
  }
 
@@ -246,7 +273,7 @@
 
  .footer-bottom {
      background-color: black;
-     padding: 6px 0;
+     padding: 8px 0;
      text-align: center;
      clear: both;
 
